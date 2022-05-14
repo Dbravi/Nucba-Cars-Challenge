@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  text-shadow: 1px 1px 1px black;
 }
 
 .logo {
@@ -77,8 +76,22 @@
 
 .hero h1 {
   font-size: 3em;
-  text-shadow: 2px 2px 2px black;
   margin-top: 15vh;
+  font-size: 5vw;
+  text-transform: uppercase;
+  line-height:1;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(186,148,62,1) 0%, rgba(236,172,32,1) 20%, rgba(186,148,62,1) 39%, rgba(249,244,180,1) 50%, rgba(186,148,62,1) 60%, rgba(236,172,32,1) 80%, rgba(186,148,62,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;	
+  animation: shine 3s infinite;
+  background-size: 200%;
+  background-position: left;
+
+}
+@keyframes shine {
+  to{background-position: right}
+ 
 }
 
 .hero h2 {
@@ -92,8 +105,13 @@
   display: flex;
   align-items: left;
   padding: 15px;
+  
 }
-
+button {
+  background-color: rgb(148, 119, 38);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
 button:hover {
   background-color: black;
 
