@@ -6,44 +6,12 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-}
-
-.body
-{
   background-color: black;
 }
 
-.logo {
-  width: 120px;
-  height: 80px;
-  position: absolute;
-  z-index: 9;
-  filter: invert(100%);
-  margin: 15px;
-  transform: rotate(360deg);
-  -webkit-animation: rotate-vert-center 2s linear infinite both;
-	        animation: rotate-vert-center 2s linear infinite both;
-}
 
- @-webkit-keyframes rotate-vert-center {
-  0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-@keyframes rotate-vert-center {
-  0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
+.logo {
+  color:white;
 }
 
 .video {
@@ -51,7 +19,7 @@
   height: 100vh;
   object-fit: cover;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   filter: brightness(0.5);
 }
 
@@ -78,6 +46,7 @@
   background-size: 200%;
   background-position: left;
   font-weight: bolder;
+  z-index: 99;
 
 }
 @keyframes shine {
@@ -89,6 +58,8 @@
   font-size: 1.4em;
   width: 70%;
   text-shadow: 2px 2px 2px black;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .btn {
@@ -120,6 +91,10 @@ button:hover {
 
 /*#region NAVBAR*/
 
+nav {
+  display: flex;
+background-color: rgba(0, 0, 0, 0);}
+
 .topnav {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0);
@@ -138,6 +113,7 @@ button:hover {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 900;
+  background-color: #ffffff00;
 }
 
 .topnav a:hover {
