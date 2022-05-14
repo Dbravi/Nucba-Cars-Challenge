@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Documetn</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./sports-car.svg">
+        </div>
+        <div class="topnav" id="myTopnav">
+            <span></span>
+            <a href="#" onclick="myFunction()">TEST DRIVE</a>
+            <span></span>
+            <a href="#" onclick="myFunction()">POST VENTA</a>
+            <span></span>
+            <a href="#" onclick="myFunction()">USADOS</a>
+            <span></span>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </div>
+    </nav>
+
+    <video class="video" autoplay loop muted plays-inline>
+        <source src="./Video.mp4" type="video/mp4">
+    </video>
+
+    <section class="hero">
+            <h1>ITERANDO MOTORES</h1>
+            <h2>Somos la red de concesionarias de autos con mas años en Argentina. Respaldado por mas de 45 años junto a las marcas líderes.</h2>
+            <div class="btn">
+                <button type="submit" class="btn">CONSULTANOS</button>
+              </div>
+            </div>
+    </section>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</body>
+
+</style>
+
+</html>
