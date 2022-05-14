@@ -8,6 +8,11 @@
   font-size: 18px;
 }
 
+.body
+{
+  background-color: black;
+}
+
 .logo {
   width: 120px;
   height: 80px;
